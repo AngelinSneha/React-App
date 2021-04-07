@@ -10,7 +10,7 @@ import Typewriter from 'typewriter-effect';
 function Home() {
     return (
         <div>
-            <div className="conatiner pl-3 pr-3">
+            <div className="conatiner pl-4 pr-4">
                 <div className="row">
                     <div className="col-md-7 col-xs-12 textValue">
                         <div className="h2 font">Making the most of the ever-growing</div>
