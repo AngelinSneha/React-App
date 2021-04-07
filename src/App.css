@@ -52,8 +52,8 @@ h1 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	border: 1px solid rgb(40,40,70);
-	border-left-color: rgb(240,200,41);
+	border: 1px solid #810000;
+	border-left-color: white;
 	border-radius: 974px;
 		-o-border-radius: 974px;
 		-ms-border-radius: 974px;
