@@ -10,7 +10,7 @@ import Typewriter from 'typewriter-effect';
 function Home() {
     return (
         <div>
-            <div className="conatiner pl-5">
+            <div className="conatiner pl-3 pr-3">
                 <div className="row">
                     <div className="col-md-7 col-xs-12 textValue">
                         <div className="h2 font">Making the most of the ever-growing</div>
@@ -26,8 +26,8 @@ function Home() {
                         <p className="pb-3 pt-3" style={{lineHeight:"1.5"}}>Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
                         <button className="btn mb-3 mt-3 mainColorbg btn-raised">Read More</button>
                     </div>
-                    <div className="col-md-5 col-xs-12">
-                        <img src="https://images.pexels.com/photos/251225/pexels-photo-251225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" className="imgHome" />
+                    <div className="col-md-5 col-xs-12 pl-3 pr-3" style={{paddingRight:0}}>
+                        <img alt="laptop" src="https://images.pexels.com/photos/251225/pexels-photo-251225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" className="imgHome" />
                     </div>
                 </div>
             </div>
