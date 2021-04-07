@@ -1,4 +1,4 @@
-# DSI
+# React Appliation
 
 **_A Front-end Interactive Website_**
 
@@ -10,7 +10,3 @@
 2. `$ npm start` - To start the frontend Server
 
 - Now, your frontend server will be available at http://localhost:3000
-
-<br />
-
-- Created using ReactJS
