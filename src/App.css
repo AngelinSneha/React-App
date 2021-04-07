@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+
+/* ==========================================================================
+   Responsive images and box padding
+   ========================================================================== */
+html {
+	scroll-behavior: smooth;
+}
+img,
+object {
+  display: block;
+  border: 0;
+  max-width: 100%;
+  height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  -moz-box-sizing: border-box;
+  -webkit-kit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  /* cursor: url("https://www.pngkin.com/mnp/12-120067.png"), auto; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background: #fefefe;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container {
+  width: 80%;
+  margin: 60px auto;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.cssload-container{
+	position:relative;
+}
+	
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 1px solid rgb(40,40,70);
+	border-left-color: rgb(240,200,41);
+	border-radius: 974px;
+		-o-border-radius: 974px;
+		-ms-border-radius: 974px;
+		-webkit-border-radius: 974px;
+		-moz-border-radius: 974px;
+}
+
+.cssload-whirlpool {
+	margin: -24px 0 0 -24px;
+	height: 49px;
+      top: 8em;
+	width: 49px;
+	animation: cssload-rotate 1150ms linear infinite;
+		-o-animation: cssload-rotate 1150ms linear infinite;
+		-ms-animation: cssload-rotate 1150ms linear infinite;
+		-webkit-animation: cssload-rotate 1150ms linear infinite;
+		-moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::before {
+	content: "";
+	margin: -22px 0 0 -22px;
+	height: 43px;
+	width: 43px;
+	animation: cssload-rotate 1150ms linear infinite;
+		-o-animation: cssload-rotate 1150ms linear infinite;
+		-ms-animation: cssload-rotate 1150ms linear infinite;
+		-webkit-animation: cssload-rotate 1150ms linear infinite;
+		-moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::after {
+	content: "";
+	margin: -28px 0 0 -28px;
+	height: 55px;
+	width: 55px;
+	animation: cssload-rotate 2300ms linear infinite;
+		-o-animation: cssload-rotate 2300ms linear infinite;
+		-ms-animation: cssload-rotate 2300ms linear infinite;
+		-webkit-animation: cssload-rotate 2300ms linear infinite;
+		-moz-animation: cssload-rotate 2300ms linear infinite;
+}
+
+
+
+@keyframes cssload-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes cssload-rotate {
+	100% {
+		-o-transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes cssload-rotate {
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-rotate {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes cssload-rotate {
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+.mainColor {
+  color: #810000;
+}
+.mainColorbg {
+  background-color: #810000;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.imgHome {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 12rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.clogo {
+	width: 6.5rem;
+	height: 3.5rem;
+	/* margin: 2px; */
+}
+@media only screen and (max-width: 700px) {
+  .textValue {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .font {
+    font-size: 1.5rem;
   }
+}
+.pTag p {
+	line-height: 1.5;
+	color: grey;
+	text-align: justify;
+}
+@media only screen and (max-width: 1050px) {
+	.pTag div {
+		font-size: 1.4rem;
+	}
+	.pTag p {
+		line-height: 1.2;
+		font-size: 0.8em;
+	}
+	.clogo {
+		width: 4.2rem;
+		height: 3rem;
+		/* margin: 2px; */
+	}
+}
+@media only screen and (max-width: 767px) {
+	.pTag div {
+		font-size: 1.4rem;
+		margin-top: 2rem;
+	}
+	.imgTag {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		height: 12rem;
+	}
+	.pro {
+		text-align: center;
+		margin: 1rem;
+	}
+	.clogo {
+		width: 6rem;
+		height: 3rem;
+		margin: 3px;
+	}
+}
+.pro p {
+	font-family: "Lato", sans-serif;
+	line-height: 1.5;
+	color: #323232;
+}
+.f {
+	font-family: "Lato", sans-serif;
+}
+button:hover {
+	margin-top: -10px;
+}
+.cardEff {
+	padding: 1rem;
+}
+.cardEff:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+	margin-top: -2px;
+}
+.pTag p a {
+	color: grey;
+}
+.pTag p a:hover {
+	text-decoration: none;
 }
